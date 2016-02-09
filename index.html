@@ -7,6 +7,21 @@
   <meta name="description" content="PHP framework for RESTful Services">
   <meta name="author" content=" Spafaridis Xenophon (NohponeX)">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="apple-touch-icon" sizes="57x57" href="assets/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="assets/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="assets/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="assets/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="assets/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="assets/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="assets/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="assets/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="assets/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="assets/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="manifest" href="/manifest.json">
   <style type="text/css">
     body {
       padding-left: 10px;
@@ -29,7 +44,7 @@
     }
 
     h2 {
-      color: #2F3238;
+      color: #FFF;
     }
 
     .center {
@@ -44,9 +59,14 @@
     }
 
     .row {}
-
-    .flex-item {
+    .flex-right {
+      text-align: right;
+      padding-right: 120px;
+    }
+    .flex-center {
       text-align: center;
+    }
+    .flex-item {
     }
 
     a {
@@ -67,30 +87,94 @@
       <h1>
         phramework
       </h1>
-      <div class="flex-item">
+      <div class="flex-item flex-center">
+        <img src="https://avatars0.githubusercontent.com/u/12017138?v=3&s=128" title="Logo"/>
+      </div>
+      <div class="flex-item flex-center">
         <p>
           PHP framework for
           <a href="https://en.wikipedia.org/wiki/Representational_state_transfer" target="_blank">
             RESTful Services
           </a>
         </p>
-        <p>
+      </div>
+      <div class="flex-item flex-right">
+        <h2>Our packages:</h2>
+        <div id="packages">
+          <ul>
+            <li>
+              <a target="_blank" href="https://github.com/phramework/phramework">phramework/phramework</a>
+              <br/>
+              <a target="_blank" href="https://packagist.org/packages/phramework/phramework" title="Packagist">
+                <img src="https://img.shields.io/packagist/v/phramework/phramework.svg?style=flat">
+              </a>
+              <img src="https://img.shields.io/packagist/l/phramework/phramework.svg?style=flat">
+              <img src="https://img.shields.io/packagist/dt/phramework/phramework.svg?style=flat">
+            </li>
+            <li>
+              <a target="_blank" href="https://github.com/phramework/phramework">validate/validate</a>
+              <br/>
+              <a target="_blank" href="https://packagist.org/packages/phramework/validate" title="Packagist">
+                <img src="https://img.shields.io/packagist/v/phramework/validate.svg?style=flat">
+              </a>
+              <img src="https://img.shields.io/packagist/l/phramework/validate.svg?style=flat">
+              <img src="https://img.shields.io/packagist/dt/phramework/validate.svg?style=flat">
+            </li>
+            <li>
+              <a target="_blank" href="https://github.com/phramework/jsonapi">phramework/jsonapi</a>
+              <br/>
+              <a target="_blank" href="https://packagist.org/packages/phramework/jsonapi" title="Packagist">
+                <img src="https://img.shields.io/packagist/v/phramework/jsonapi.svg?style=flat">
+              </a>
+              <img src="https://img.shields.io/packagist/l/phramework/jsonapi.svg?style=flat">
+              <img src="https://img.shields.io/packagist/dt/phramework/jsonapi.svg?style=flat">
+            </li>
+            <li>
+              <a target="_blank" href="https://github.com/phramework/testphase">phramework/testphase</a>
+              <br/>
+              <a target="_blank" href="https://packagist.org/packages/phramework/testphase" title="Packagist">
+                <img src="https://img.shields.io/packagist/v/phramework/testphase.svg?style=flat">
+              </a>
+              <img src="https://img.shields.io/packagist/l/phramework/testphase.svg?style=flat">
+              <img src="https://img.shields.io/packagist/dt/phramework/testphase.svg?style=flat">
+            </li>
+            <li>
+              <a target="_blank" href="https://github.com/phramework/hephaestus">phramework/hephaestus</a>
+            </li>
+          </ul>
+          <p>
+          See packages all packages on 
           <a href="https://github.com/phramework" target="_blank">
             https://github.com/phramework
           </a>
-          <a href="https://phramework.github.io/phramework/" target="_blank">
-            documentation
-          </a>
         </p>
+        </div>
+      </div>
+      <div class="flex-item flex-center">
+        <div>
+          Follow ous on twitter!
+          <br/>
+          <a href="https://twitter.com/phramework" title="Follow @phramework">
+            <img src="https://img.shields.io/twitter/follow/phramework.svg?style=social">
+          </a>
+        </div>
       </div>
     </div>
   </div>
-  <footer itemscope itemtype="http://schema.org/Person">
+  <footer>
     Created by
-    <a href="https://nohponex.gr/" itemprop="url" target="_blank">
-      <span itemprop="name">Spafaridis Xenofon</span> (
-      <span itemprop="nickname">NohponeX</span>)
-    </a>
+    <div itemscope itemtype="http://schema.org/Person">
+      <a href="https://nohponex.gr/" itemprop="url" target="_blank">
+        <span itemprop="name">Spafaridis Xenofon</span> (
+        <span itemprop="nickname">NohponeX</span>)
+      </a>
+    </div>
+    <div itemscope itemtype="http://schema.org/Person">
+      <a href="https://github.com/alkallio" itemprop="url" target="_blank">
+        <span itemprop="name">Alexandros Kalliontzis</span> (
+        <span itemprop="nickname">alkallio</span>)
+      </a>
+    </div>
   </footer>
 </body>
 </html>
