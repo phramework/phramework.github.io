@@ -21,6 +21,7 @@
   <link rel="icon" type="image/png" sizes="96x96" href="assets/favicon-96x96.png">
   <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
   <meta name="theme-color" content="#ffffff">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <link rel="manifest" href="/manifest.json">
   <style type="text/css">
     body {
@@ -29,7 +30,7 @@
       background-color: #2F3238;
       line-height: 1.7em;
       color: #7f8c8d;
-      font-size: 14px;
+      font-size: 15px;
       font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
       display: flex;
       min-height: 95vh;
@@ -44,6 +45,7 @@
     }
 
     h2 {
+      font-size: 2em;
       color: #FFF;
     }
 
@@ -60,13 +62,42 @@
 
     .row {}
     .flex-right {
-      text-align: right;
-      padding-right: 120px;
+      flex-flow: column;
+      padding-right: 200px;
     }
     .flex-center {
       text-align: center;
     }
     .flex-item {
+    }
+
+    #packages li {
+      list-style-type: none;
+    }
+
+    #packages li > a {
+      font-size: 1.4em;
+      margin-bottom: 4px;
+    }
+
+    #packages li > p {
+      font-style: italic;
+      margin-top: 4px;
+      margin-bottom: 4px;
+      padding-left: 24px;
+    }
+
+    #packages li > small > a {
+      color: #FFFFFF;
+    }
+
+    #packages li > small > a:hover {
+      color: #D02146;
+    }
+
+    #packages li > div {
+      padding: 4px;
+      padding-left: 24px;
     }
 
     a {
@@ -93,9 +124,9 @@
       <div class="flex-item flex-center">
         <p>
           PHP framework for
-          <a href="https://en.wikipedia.org/wiki/Representational_state_transfer" target="_blank">
-            RESTful Services
-          </a>
+          <a href="https://en.wikipedia.org/wiki/Representational_state_transfer" target="_blank" title="Read more about RESTful services">
+            <abbr title="Representational State Transfer">REST</abbr>ful Services
+          </a>.
         </p>
       </div>
       <div class="flex-item flex-right">
@@ -104,46 +135,71 @@
           <ul>
             <li>
               <a target="_blank" href="https://github.com/phramework/phramework">phramework/phramework</a>
-              <br/>
-              <a target="_blank" href="https://packagist.org/packages/phramework/phramework" title="Packagist">
-                <img src="https://img.shields.io/packagist/v/phramework/phramework.svg?style=flat">
-              </a>
-              <img src="https://img.shields.io/packagist/l/phramework/phramework.svg?style=flat">
-              <img src="https://img.shields.io/packagist/dt/phramework/phramework.svg?style=flat">
+              <small>
+                <a title="Documentation" href="https://phramework.github.io/phramework/" target="_blank">
+                  <i class="fa fa-book"></i>
+                </a>
+              </small>
+              <p>A PHP framework for RESTful services and APIs</p>
+              <div>
+                <a target="_blank" href="https://packagist.org/packages/phramework/phramework" title="Packagist">
+                  <img src="https://img.shields.io/packagist/v/phramework/phramework.svg?style=flat">
+                </a>
+                <img src="https://img.shields.io/packagist/dt/phramework/phramework.svg?style=flat">
+              </div>
             </li>
             <li>
-              <a target="_blank" href="https://github.com/phramework/phramework">validate/validate</a>
-              <br/>
-              <a target="_blank" href="https://packagist.org/packages/phramework/validate" title="Packagist">
-                <img src="https://img.shields.io/packagist/v/phramework/validate.svg?style=flat">
-              </a>
-              <img src="https://img.shields.io/packagist/l/phramework/validate.svg?style=flat">
-              <img src="https://img.shields.io/packagist/dt/phramework/validate.svg?style=flat">
+              <a target="_blank" href="https://github.com/phramework/validate">validate/validate</a>
+              <small>
+                <a title="Documentation" href="https://phramework.github.io/validate/" target="_blank">
+                  <i class="fa fa-book"></i>
+                </a>
+              </small>
+              <p>Data validation library</p>
+              <div>
+                <a target="_blank" href="https://packagist.org/packages/phramework/validate" title="Packagist">
+                  <img src="https://img.shields.io/packagist/v/phramework/validate.svg?style=flat">
+                </a>
+                <img src="https://img.shields.io/packagist/dt/phramework/validate.svg?style=flat">
+              </div>
             </li>
             <li>
               <a target="_blank" href="https://github.com/phramework/jsonapi">phramework/jsonapi</a>
-              <br/>
-              <a target="_blank" href="https://packagist.org/packages/phramework/jsonapi" title="Packagist">
-                <img src="https://img.shields.io/packagist/v/phramework/jsonapi.svg?style=flat">
-              </a>
-              <img src="https://img.shields.io/packagist/l/phramework/jsonapi.svg?style=flat">
-              <img src="https://img.shields.io/packagist/dt/phramework/jsonapi.svg?style=flat">
+              <small>
+                <a title="Documentation" href="https://phramework.github.io/jsonapi/" target="_blank">
+                  <i class="fa fa-book"></i>
+                </a>
+              </small>
+              <p>jsonapi implementation for phramework</p>
+              <div>
+                <a target="_blank" href="https://packagist.org/packages/phramework/jsonapi" title="Packagist">
+                  <img src="https://img.shields.io/packagist/v/phramework/jsonapi.svg?style=flat">
+                </a>
+                <img src="https://img.shields.io/packagist/dt/phramework/jsonapi.svg?style=flat">
+              </div>
             </li>
             <li>
               <a target="_blank" href="https://github.com/phramework/testphase">phramework/testphase</a>
-              <br/>
-              <a target="_blank" href="https://packagist.org/packages/phramework/testphase" title="Packagist">
-                <img src="https://img.shields.io/packagist/v/phramework/testphase.svg?style=flat">
-              </a>
-              <img src="https://img.shields.io/packagist/l/phramework/testphase.svg?style=flat">
-              <img src="https://img.shields.io/packagist/dt/phramework/testphase.svg?style=flat">
+              <small>
+                <a title="Documentation" href="https://phramework.github.io/testphase/" target="_blank">
+                  <i class="fa fa-book"></i>
+                </a>
+              </small>
+              <p>API response testing tool</p>
+              <div>
+                <a target="_blank" href="https://packagist.org/packages/phramework/testphase" title="Packagist">
+                  <img src="https://img.shields.io/packagist/v/phramework/testphase.svg?style=flat">
+                </a>
+                <img src="https://img.shields.io/packagist/dt/phramework/testphase.svg?style=flat">
+              </div>
             </li>
             <li>
               <a target="_blank" href="https://github.com/phramework/hephaestus">phramework/hephaestus</a>
+              <p>Terminal toolbox for Phramework</p>
             </li>
           </ul>
           <p>
-          See packages all packages on 
+          See all packages at
           <a href="https://github.com/phramework" target="_blank">
             https://github.com/phramework
           </a>
@@ -152,9 +208,8 @@
       </div>
       <div class="flex-item flex-center">
         <div>
-          Follow ous on twitter!
-          <br/>
-          <a href="https://twitter.com/phramework" title="Follow @phramework">
+          <h3>Follow us on Twitter!</h3>
+          <a href="https://twitter.com/phramework" title="Follow @phramework on Twitter">
             <img src="https://img.shields.io/twitter/follow/phramework.svg?style=social">
           </a>
         </div>
@@ -162,17 +217,17 @@
     </div>
   </div>
   <footer>
-    Created by
+    <h4>Maintained by</h4>
     <div itemscope itemtype="http://schema.org/Person">
       <a href="https://nohponex.gr/" itemprop="url" target="_blank">
-        <span itemprop="name">Spafaridis Xenofon</span> (
-        <span itemprop="nickname">NohponeX</span>)
+        <span itemprop="name">Spafaridis Xenofon</span>
+        (<span itemprop="nickname">nohponex</span>)
       </a>
     </div>
     <div itemscope itemtype="http://schema.org/Person">
       <a href="https://github.com/alkallio" itemprop="url" target="_blank">
-        <span itemprop="name">Alexandros Kalliontzis</span> (
-        <span itemprop="nickname">alkallio</span>)
+        <span itemprop="name">Kalliontzis Alexandros</span>
+        (<span itemprop="nickname">alkallio</span>)
       </a>
     </div>
   </footer>
